@@ -77,7 +77,7 @@ padding: 10px;
   background:#f9ca24;
   color: white;
   border-radius: 50%;
-  transition: 0.4s;
+  transition: 0.4s linear;
 }
 
 .text_3:hover{
