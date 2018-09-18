@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adventure</title>
+    <link rel="stylesheet" type="text/css" href="adventure.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <script src="jquery-3.3.1.js" charset="utf-8">
+    </script>
+    <script>
+    $(window).scroll(function() {
+      var wScroll = $(this).scrollTop();
+      console.log(wScroll);
+      $('.head').css({
+          'transform' : 'translate(0px,'+wScroll /1.5 +'%)'
+      }
+      );
+      if (wScroll>$('#Video').offset().top) {
+        $('#navbar').css({'display':'block'});
+      }
+
+      if (wScroll<$('#Video').offset().top) {
+        $('#navbar').css({'display':'none'});
+      }
+    });
+    </script>
+  </head>
+
+<body>
+
+  <div id="navbar">
+    <a href="#Home">HOME</a>
+    <a href="#Video">VIDEOS</a>
+    <a href="#Booking">BOOKINGS</a>
+    <a href="#">TOUR</a>
+  </div>
+
+<div class="back_to_home">
+  <a href="HomePage.html#Explore"><img src="Menu/left.svg" alt="" title="Back to home" width="40"></a>
+</div>
+
+
+<div class="background_slideshow" id="Home">
+  <div class=head>
+    <center>ADVENTURE</center>
+  </div>
+</div>
+
+  <h1 id="Video" style="color:black;"> <center> VIDEO <hr width=40><center> </h1>
+  <div class="vframe">
+      <iframe width="600" height="400"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+  </iframe>
+  <ul style="float:right; margin-right:15%;" type=none>
+  <a href="#" style="text-decoration: none; color:black;"><li class="nextvideo" ><img src="adv/slide1.jpg" height=70 width=150> Click me! </li></a>
+  <br>
+  <a href="#" style="text-decoration: none; color:black;"><li class="nextvideo"><img src="adv/slide2.jpg" height=70 width=150> Click me! </li></a>
+  <br>
+  <a href="#" style="text-decoration: none; color:black;"><li class="nextvideo"><img src="adv/slide3.jpg" height=70 width=150> Click me! </li></a>
+  <br>
+  <a href="#" style="text-decoration: none; color:black;"><li class="nextvideo"><img src="adv/slide1.jpg" height=70 width=150> Click me! </li></a>
+  </ul>
+  </div>
+  <br>
+
+
+  <h1  id="Booking" style="color:black;"> <center> BOOKINGS <hr width=40></center> </h1>
+
+
+
+  <footer id="Aboutus">
+    <h2 class="Aboutus_heading"><center>ABOUT US<hr width=40></center></h2>
+    <center>
+      <div class="Aboutus_div">
+        <h1>MUMBAI</h1>
+        <ul class="Aboutus_list1">
+          <li><a href="#">Terms & conditions</a> </li>
+          <li><a href="#">Privacy policy</a> </li>
+          <li><a href="#">Cookies policy</a> </li>
+          <li><a href="#">Copyrights Notification</a> </li>
+        </ul>
+        <ul class="Aboutus_list2">
+          <li><a href="#"><img src="Menu\facebook-logo-button.svg" alt=""> </a> </li>
+          <li><a href="#"><img src="Menu\instagram-logo.svg" alt=""></a> </li>
+          <li><a href="#"><img src="Menu\twitter-logo-button.svg" alt=""></a> </li>
+          <li><a href="#"><img src="Menu\linkedin-logo-button.svg" alt=""></a> </li>
+          <li><a href="#"><img src="Menu\google-plus-logo-button.svg" alt=""></a> </li>
+        </ul>
+        <table class="Aboutus_table"   >
+          <tr>
+            <th>Help</th>
+            <th>Categories</th>
+          </tr>
+          <tr>
+            <td><a href="#">Our Team</a> </td>
+            <td><a href="HomePage.html#Home">Home</a> </td>
+          </tr>
+          <tr>
+            <td><a href="#">Credits</a> </td>
+            <td><a href="HomePage.html#Explore">Explore</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Contact</a></td>
+            <td><a href="HomePage.html#Stories">Stories</a> </td>
+          </tr>
+          <tr>
+            <td><a href="#">Support</a></td>
+            <td><a href="HomePage.html#Nearby">Near by</a> </td>
+          </tr>
+        </table>
+        <div class="Aboutus_copyright">
+          <hr class="Aboutus_line" width=50>
+          <p>&copy; 2018-19 MUMBAI Company All rights reserved.</p>
+        </div>
+      </div>
+    </center>
+  </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+
+#Explore{
+  position: relative;
+  z-index: -1;
+  min-width: 100%;
+}
+.section1_heading{
+  color: black;
+  font-size:40px;
+}
+.Explore_main{
+  position: absolute;
+  min-width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  background: #0000ee;
+  background-image: url("Stories/texture.png");
+  background-attachment: fixed;
+}
+.main{
+  position: absolute;
+  width: 100%;
+  min-height: 100px;
+  transform: translateY(25%);
+  background-color: black;
+}
+
+.column{
+  position: relative;
+  width: 25%;
+  height: 330px;
+  float: left;
+  overflow:hidden;
+}
+.column .image{
+  position: relative;
+}
+
+.column .image img{
+max-width: 100%;
+transition: 0.2s;
+}
+
+.column:hover .image img{
+transform: scale(1.5);
+opacity: 0.5;
+}
+
+.column .content{
+  position: absolute;
+  top: 160px;
+  left: 80px;
+  text-align: center;
+  transform: scale(0.5);
+  visibility: hidden;
+  transition: 0.2s;
+  }
+
+.column:hover .content{
+  transform: scale(1);
+  visibility: visible;
+}
+
+.column .content a{
+  position: relative;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

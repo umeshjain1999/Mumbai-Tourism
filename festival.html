@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Festival</title>
+    <!--For sticky bar-->
+    <link rel="stylesheet" type="text/css" href="festival.css">
+    <link rel="stylesheet"  type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <script src="jquery-3.3.1.js" charset="utf-8">
+    </script>
+
+    <script>
+$(function() {
+
+      $('.video_1, .video_2,.video_3').hover(function toggleControls() {
+      if (this.hasAttribute("controls")) {
+          this.removeAttribute("controls");
+      } else {
+          this.setAttribute("controls", "controls");
+      }
+  });
+});
+
+$(window).scroll(function() {
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll>$('#Video').offset().top) {
+    $('#navbar').css({'display':'block'});
+  }
+
+  if (wScroll<$('#Video').offset().top) {
+    $('#navbar').css({'display':'none'});
+  }
+});
+
+
+
+    </script>
+  </head>
+  <body>
+
+      <div id="navbar" >
+        <a href="#Home">HOME</a>
+        <a href="#Video">VIDEOS</a>
+        <a href="#Festivals">FESTIVALS</a>
+      </div>
+      <div class="back_to_home">
+        <a href="HomePage.html#Explore"><img src="Menu/left.svg" alt="" title="Back to home" width="40"></a>
+      </div>
+      <section id="Home">
+
+      </section>
+
+
+      <section id="Video">
+        <h1 style="color:black;"><center> FEATURED VIDEOS <hr width=40><center> </h1>
+        <div class="video_frame">
+          <video  class="video_1">
+            <source src="Festival/dahihandi.mp4" type="video/mp4">
+              Your Browser doesn't support this video
+          </video>
+          <video  class="video_2" >
+            <source src="Festival/diwali.mp4" type="video/mp4">
+              Your Browser doesn't support this video
+          </video>
+          <video  class="video_3">
+            <source src="Festival/ganesh.mp4" type="video/mp4">
+              Your Browser doesn't support this video
+          </video>
+        </div>
+      </section>
+
+      <section id="Festivals">
+        <h1 style="color:black;"><center> FESTIVALS <hr width=40><center> </h1>
+        <h2>Popular listed.</h2>
+          <div class="wrapper">
+            <div class="col1" id="col11">
+                <h3>Eid</h3><hr width=20>
+                <p>Muslims across the world celebrate a festival named Eid. To greet each other, they use the term “ Mubarak” which means blessed or celebrations. So, Eid Mubarak is a well-wishing prayer used by Muslims to basically wish friends and family while exchanging greetings.
+</p>
+<p>There are five pillars of Islam namely- faith, prayer, charity, making a pilgrimage to Mecca and Ramadan. The fifth pillar, Ramadan, is observed during the ninth month of the Islamic calendar. It is a time for spiritual reflections in which people don't eat or drink between sunrise and sunset. The common belief behind fasting is that it brings a person closer to the almighty. With the ending of the holy month of Ramadan comes the festival of Eid al-Fitr. Celebrations begin when the moon is sighted after the sunset. There is no fixed date for Eid as the Islamic calendar is based on the lunar cycles.</p>
+            </div>
+            <div class="col1">
+              <div id="col12"></div>
+              <div id="col22">
+                <h3>Diwali</h3><hr width=20>
+                <p>Diwali is India’s ‘Festival of Light’, a time when people come together to celebrate good conquering evil, light conquering dark. This celebration of new beginnings coincides with the Hindu New Year and the start of the new business year, so there are prayers to Lakshmi, the goddess of wealth, and Ganesh, the god of wisdom and luck, for a successful year. It’s the biggest event in the Hindu calendar, and Sikhs and Jains celebrate similar festivals at the same time as Hindus celebrate Diwali.</p>
+                <h4>The legends behind Diwali</h4>
+                <p>Different parts of India celebrate or place more emphasis on different legends at Diwali. In northern India, the festival particularly celebrates the return and coronation of Rama and his wife Sita from their fourteen-year exile following the 15th century BC defeat of the ten-headed demon, Ravana. Elsewhere, many link Diwali with Parvathi, the goddess of love and devotion, while for many others, the festival primarily honours the goddess of wealth, Lakshmi; in Bengal, it’s the goddess Kali. Meanwhile, Indians in the north central region, along with the Nepalese, remember Krishna’s victory over the demon king Narakasura.</p>
+
+              </div>
+
+            </div>
+            <div class="col1" id="col13">
+                <h3>Ganesh Chaturthi</h3><hr width=20>
+                <p>Ganesh Chaturthi, in Hinduism, 10-day festival marking the birth of the elephant-headed deity Ganesha, the god of prosperity and wisdom. It begins on the fourth day (chaturthi) of the month of Bhadrapada (August–September), the sixth month of the Hindu calendar.
+
+At the start of the festival, idols of Ganesha are placed on raised platforms in homes or in elaborately decorated outdoor tents. The worship begins with the pranapratishtha, a ritual to invoke life in the idols, followed by shhodashopachara, or the 16 ways of paying tribute. Amid the chanting of Vedic hymns from religious texts like the Ganesh Upanishad, the idols are anointed with red sandalwood paste and yellow and red flowers. Ganesha is also offered coconut, jaggery, and 21 modaks (sweet dumplings), considered to be Ganesha’s favourite food.
+
+At the conclusion of the festival, the idols are carried to local rivers in huge processions accompanied by drumbeats, devotional singing, and dancing. There they are immersed, a ritual symbolizing Ganesha’s homeward journey to Mount Kailas—the abode of his parents, Shiva and Parvati.
+
+Ganesh Chaturthi assumed the nature of a gala public celebration when the Maratha ruler Shivaji (c. 1630–80) used it to encourage nationalist sentiment among his subjects, who were fighting the Mughals. In 1893, when the British banned political assemblies, the festival was revived by the Indian nationalist leader Bal Gangadhar Tilak. Today the festival is celebrated in Hindu communities worldwide and is particularly popular in Maharashtra and parts of western India.</p>
+            </div>
+            <div class="col1" id="col14">
+                <h3>Holi</h3><hr width=20>
+                <p>Holi, also known as the Festival of Colours, may not be the biggest religious festival in the world, but it is without a doubt one of the best. The first thing that springs to mind when you think of it is people coloured in paint and powdered dye flying through the air, but what is Holi Festival?
+
+Holi is mainly celebrated in India and Nepal with the millions of Hindus coming together on the last full moon day of the lunar month (February / March).
+
+The history of Holi is fascinating. The main reason people celebrate it is to bring in the new season, Spring (hence the colours), but there is a darker undertone it all. Hindus believe it is the one day of the year that the Gods look away, the one day of the year where they can rid themselves of their evil demons before starting anew. The colour is supposed to signify the sins, and with it being washed off at the end of the day you are reborn clean.</p>
+<p>Holi lowers the strictness of social norms in Indians; gaps between age, gender and status are thrown aside. Together, men and women, the rich and the poor, enjoy each other’s company in a truly hedonistic day. With the gods turning a blind eye you see a libertas in Indians that is rare. They really open themselves up and it’s good to see a different side to them. Expect booze, bhang, and maybe the occasional chillum; after all, that is what Holi Festival is really like.</p>
+            </div>
+          </div>
+      </section>
+
+<footer id="Aboutus">
+  <h2 class="Aboutus_heading"><center>ABOUT US<hr width=40></center></h2>
+  <center>
+    <div class="Aboutus_div">
+      <h1>MUMBAI</h1>
+      <ul class="Aboutus_list1">
+        <li><a href="#">Terms & conditions</a> </li>
+        <li><a href="#">Privacy policy</a> </li>
+        <li><a href="#">Cookies policy</a> </li>
+        <li><a href="#">Copyrights Notification</a> </li>
+      </ul>
+      <ul class="Aboutus_list2">
+        <li><a href="#"><img src="Menu\facebook-logo-button.svg" alt=""> </a> </li>
+        <li><a href="#"><img src="Menu\instagram-logo.svg" alt=""></a> </li>
+        <li><a href="#"><img src="Menu\twitter-logo-button.svg" alt=""></a> </li>
+        <li><a href="#"><img src="Menu\linkedin-logo-button.svg" alt=""></a> </li>
+        <li><a href="#"><img src="Menu\google-plus-logo-button.svg" alt=""></a> </li>
+      </ul>
+      <table class="Aboutus_table"   >
+        <tr>
+          <th>Help</th>
+          <th>Categories</th>
+        </tr>
+        <tr>
+          <td><a href="#">Our Team</a> </td>
+          <td><a href="HomePage.html#Home">Home</a> </td>
+        </tr>
+        <tr>
+          <td><a href="#">Credits</a> </td>
+          <td><a href="HomePage.html#Explore">Explore</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Contact</a></td>
+          <td><a href="HomePage.html#Stories">Stories</a> </td>
+        </tr>
+        <tr>
+          <td><a href="#">Support</a></td>
+          <td><a href="HomePage.html#Nearby">Near by</a> </td>
+        </tr>
+      </table>
+      <div class="Aboutus_copyright">
+        <hr class="Aboutus_line" width=50>
+        <p>&copy; 2018-19 MUMBAI Company All rights reserved.</p>
+      </div>
+    </div>
+  </center>
+</footer>
+
+
+  </body>
+</html>

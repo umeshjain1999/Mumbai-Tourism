@@ -1,0 +1,102 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     background:snowwhite;
+     background-image: url("Background/stars-opacity.0979c1.svg");
+	   font-family: sans-serif;
+     scroll-behavior: smooth;
+
+}
+
+.background_slideshow{
+  min-width: 100%;
+  height: 660px;
+  background-image:url("adv/slide1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: slide 20s infinite;
+  animation-delay: 2s;
+}
+@keyframes slide {
+  30%{
+    background-image: url("adv/slide2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  60%{
+    background-image: url("adv/slide3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100%{
+    background-image: url("adv/slide4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+
+.head{
+  position: absolute;
+  top: 50%;
+  left: 33.4%;
+  color:#FFFFFF;
+  letter-spacing: 7px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+hr.divider {
+color: black;
+ margin:auto;
+ width=20px;
+ border-width: 2px;
+}
+
+hr.menu{
+  margin-top:20px;
+}
+
+p {
+ margin: 0;
+ padding: 0;
+}
+
+.content {
+  padding: 16px;
+  opacity:1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+  opacity: 1;
+}
+
+
+.vframe{
+  left:10px;
+  padding: 50px;
+}
+
+.vframe ul li:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+.nextvideo{
+height:100px;
+font-size: 20px;
+}

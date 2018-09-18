@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Random Tour</title>
+  <style media="screen">
+    h1{
+      font-family: sans-serif;
+      color: #74b9ff;
+      position: absolute;
+      top: 250px;
+      right: 500px;
+      font-size: 50px;
+      /*animation: heading 3s forwards ease-out;*/
+    }
+    @keyframes heading {
+      0%{
+        letter-spacing:5px;
+      }
+      50%{
+        letter-spacing:15px;
+      }
+      100%{
+        letter-spacing:5px;
+      }
+    }
+  </style>
+</head>
+<body id="colors">
+<h1 class="head">Searching place for you</h1>
+<img src="adv/slide1" id="mainimage" style="background-size:cover; background-repeat: no-repeat; display: table;">
+<script>
+var i = 0;
+function randomgen(){
+var myImage = document.getElementById("mainimage");
+var ArrayOfImages = ['adv/slide1.jpg', 'adv/slide2.jpg','adv/slide1.0.jpg','adv/slide1.1.jpg','adv/slide1.2.jpg','adv/image1.jpg'];
+var randomitem = ArrayOfImages[Math.floor(Math.random()*ArrayOfImages.length)];
+myImage.setAttribute('src', randomitem)
+i++;
+if(i==20)
+{
+  stopfunction();
+}
+}
+
+var myvar = setInterval(randomgen,150);
+function stopfunction(){
+  clearInterval(myvar);
+
+}
+
+$(".head").remove();
+</script>
+</body>
+</html>

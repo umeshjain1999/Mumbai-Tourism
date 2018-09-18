@@ -1,0 +1,99 @@
+body{
+  margin: 0;
+  padding: 0;
+  background:black;
+  background-image: url("Background/stars-opacity.0979c1.svg");
+  font-family: sans-serif;
+  min-width: 100%;
+}
+table{
+  position: absolute;
+  left: 6%;
+}
+#div_1 , #div_2 , #div_3 , #div_4 , #div_5 , #div_6 , #div_7 , #div_8 , #div_9 , #div_10 , #div_11 , #div_12{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color:white;
+  text-align:center;
+  overflow-y: scroll;
+  transition: 0.7s;
+}
+p{
+position: relative;
+top: 5%;
+line-height: 30px;
+margin:40px;
+}
+.intialallhidden{
+  display: none;
+}
+.close{
+  position: absolute;
+  width: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+div::-webkit-scrollbar{
+width:2px;
+}
+div::-webkit-scrollbar-track{
+-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+}
+div::-webkit-scrollbar-thumb{
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+
+td{
+  overflow:hidden;
+  border-radius: 10px;
+}
+td img{
+  position: relative;
+  float: left;
+  width: 400px;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+td:hover img{
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+h1{
+color: white;
+text-align: center;
+padding-top: 10px;
+text-transform: uppercase;
+}
+h3{
+position: relative;
+color: darkgrey;
+left: 10%;
+font-size: 15px;
+}
+
+
+
+.back_to_home{
+  padding-top: 5px;
+}
+.back_to_home a{
+  text-decoration: none;
+}
+.back_to_home img{
+position: relative;
+left: 1%;
+width: 40px;
+transform: translateY(20%);
+border-radius: 50%;
+z-index: 1;
+background-color: white;
+}

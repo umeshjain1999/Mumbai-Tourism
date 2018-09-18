@@ -1,0 +1,145 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     background:snowwhite;
+     background-image: url("Background/stars-opacity.0979c1.svg");
+	   font-family: sans-serif;
+     scroll-behavior: smooth;
+}
+
+#Home{
+  min-width: 100%;
+  height: 650px;
+  background-image:url('Festival/Janmashtami.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+	0%{
+		background-image:url('Festival/Janmashtami.jpg');
+		  animation-delay: 2s;
+	}
+  30%{
+    background-image: url('Festival/Ganesh.jpg');
+	  animation-delay: 2s;
+  }
+
+    60%{
+    background-image: url('Festival/Diwali_Holi.jpg');
+	  animation-delay: 2s;
+  }
+}
+
+#Video{
+  padding-top: 40px;
+  text-align: center;
+}
+.video_frame{
+  background: #0000ee;
+  background-image: url("Stories/texture.png");
+  background-attachment: fixed;
+  padding: 20px;
+}
+ .video_1{
+width: 80%;
+padding-bottom: 30px;
+border-radius: 10px;
+ }
+.video_2, .video_3{
+  width: 40%;
+  border-radius: 10px;
+}
+
+#Festivals{
+  padding-top: 40px;
+}
+#Festivals h2{
+  position: relative;
+  font-weight: lighter;
+  color: grey;
+  font-size: 10px;
+  left: 2%;
+}
+
+.wrapper{
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  border-radius: 17px;
+  background: #5A06AA;
+  background-image: url("Stories/texture.png");
+  background-attachment: fixed;
+
+
+}
+.col1{
+  left: 1.5%;
+  width: 24%;
+  position:relative;
+  height: 400px;
+  float: left;
+  margin-top: 50px;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+/*
+#col11{
+  background: url("Festival/eid.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter: blur(0.5px);
+}
+#col22{
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+}
+#col12{
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 400px;
+  background: url("Festival/Diwali.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+}
+#col13{
+  background: url("Festival/Ganesh1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter: blur(0.5px);
+  color: white;
+}
+#col14{
+  background: url("Festival/Holi.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter: blur(0.5px);
+  color: white;
+}
+
+*/
+.col1 p{
+  padding: 5px;
+}
+
+div::-webkit-scrollbar{
+width:2px;
+}
+div::-webkit-scrollbar-track{
+-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+}
+div::-webkit-scrollbar-thumb{
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
